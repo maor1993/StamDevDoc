@@ -1,0 +1,41 @@
+{
+  "build": {
+    "cpu": "cortex-m4",
+    "extra_flags": ["-DSTM32L412xx",
+     "-DPIO_FRAMEWORK_ARDUINO_ENABLE_CDC",
+      "-DUSBCON", 
+      "-DUSBD_VID=0x0483", 
+      "-DUSBD_PID=0x5740",
+      "-DUSB_MANUFACTURER=\"MM Prod\"", 
+      "-DUSB_PRODUCT=\"STAMDEV L412\"",
+      "-DHAL_PCD_MODULE_ENABLED"
+    ],
+    "f_cpu": "80000000L",
+    "mcu": "stm32l412kbu6",
+    "product_line": "STM32L412xx",
+    "variant": "STAMDEV_L412KB"
+  },
+  "debug": {
+    "default_tools": [
+      ""
+    ],
+    "openocd_board": "st_nucleo_l4",
+    "svd_path": "STM32L4x2.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "cmsis",
+    "stm32cube"
+  ],
+  "name": "STAMDEV L412KB",
+  "upload": {
+    "maximum_ram_size": 40960,
+    "maximum_size": 131072,
+    "protocol": "dfu",
+    "protocols": [
+      "dfu"
+    ]
+  },
+  "url": "https://www.st.com/en/evaluation-tools/nucleo-l412kb.html",
+  "vendor": "ST"
+}

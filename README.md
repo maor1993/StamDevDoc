@@ -134,7 +134,15 @@ to upload to this board you'll also need the stm32cubeprogrammer as there is no 
 
 
 ### ST-LINK Connector 
-If ST Link debugging is required, you can solder pins to J2, the part number this connector was planned for is the Wurth Elektronik [61000421121](https://www.we-online.com/catalog/datasheet/61000421121.pdf)
+If ST Link debugging is required, you can solder pins to J2. J2 is located on the Bottom of the PCB
+
+![J2 Location](./Img/J2Loc.png)
+
+The pinout for the J2 SWD connector is as follows:
+
+![J2 Pinout](./Img/J2Pinout.png)
+
+the part number this connector was planned for is the Wurth Elektronik [61000421121](https://www.we-online.com/catalog/datasheet/61000421121.pdf)
 
 
 

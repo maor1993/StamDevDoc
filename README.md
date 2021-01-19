@@ -70,6 +70,13 @@ To enter boot mode **While board is connected to power!**:
 ![ST In Bootmode](./Img/DeviceManager.png)
 
 
+# **If you're having issues with windows device manager:**
+
+For some computers the wrong driver is installed and upload using dfu will not work
+to repair this, follow this [link](https://www.hanselman.com/blog/how-to-fix-dfuutil-stm-winusb-zadig-bootloaders-and-other-firmware-flashing-issues-on-windows)
+
+#
+
 ## Setup Guide (PlatformIO)
 Heres how to work with the board using platformIO
 

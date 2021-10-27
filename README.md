@@ -81,7 +81,7 @@ to repair this, follow this [link](https://www.hanselman.com/blog/how-to-fix-dfu
 Heres how to work with the board using platformIO
 
 ### Add Stamdev to list of boards 
-* Go to your platformIO folder (Should be C:/Windows/Users/{YOUR USER}/.plaformio)
+* Go to your platformIO folder (Should be C:/Users/{YOUR USER}/.plaformio)
 
 * Create a folder named boards
 
@@ -89,7 +89,14 @@ Heres how to work with the board using platformIO
 
 * Copy into boards folder `stamdev_l412kb.json`
 
+* From platforms, ensure you have ststm32 installed:
+
+![ststm32](./Img/ststm32.png)
+
+
 * You should now see the board when you create a new project
+
+
 
 ![pionewboard](./Img/pionewproj.png)
 
@@ -111,6 +118,9 @@ platform_packages =
 
 ![piomod](./Img/pioarduinoini.png)
 
+
+## if you're seeing build failed and not finding variant file
+**delete the currently installed arudinostm32 library, it can be found at: c:/Users/{YOUR USERNAME}/.platformio/packages/framework-arduinoststm32**
 
 * Build the project!
 
